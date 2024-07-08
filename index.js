@@ -6,6 +6,7 @@ import { multiply } from "./src/multiply.js";
 import { inverse } from "./src/inverse.js";
 import { hadamard } from "./src/hadamard.js";
 import { diagonal } from "./src/diagonal.js";
+import { scalarMultiply } from "./src/scalarMultiply.js";
 
 let matrix1 = new Matrix([
   [1, 2],
@@ -44,6 +45,12 @@ console.log(multiplicationResult.data);
 
 let transposedResult = transpose(matrix3.data);
 console.log("Transpose Result:");
+console.log(transposed_result);
+
+let scalar = 2;
+let scalarMultiplicationResult = scalarMultiply(matrix1.data, scalar);
+console.log("Scalar Multiplication Result:");
+console.log(scalarMultiplicationResult);
 console.log(transposedResult);
 
 let hadamardResult = hadamard(matrix1.data, matrix2.data);
