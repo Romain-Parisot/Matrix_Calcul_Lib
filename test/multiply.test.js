@@ -1,5 +1,5 @@
-import Matrix from "./Matrix.js";
-import { multiply } from "./multiply.js";
+import Matrix from "../src/matrix.js";
+import { multiply } from "../src/multiply.js";
 
 describe("multiply", () => {
   test("multiplies two matrices correctly", () => {
