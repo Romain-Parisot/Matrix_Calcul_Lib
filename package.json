@@ -1,6 +1,6 @@
 {
   "name": "matrix_calcul_lib",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "This lib will provide various function to calculate matrix",
   "main": "index.js",
   "type": "module",
