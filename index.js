@@ -7,6 +7,7 @@ import { inverse } from "./src/inverse.js";
 import { hadamard } from "./src/hadamard.js";
 import { diagonal } from "./src/diagonal.js";
 import { scalarMultiply } from "./src/scalarMultiply.js";
+import { trace } from "./src/trace.js";
 
 let matrix1 = new Matrix([
   [1, 2],
@@ -30,10 +31,16 @@ let matrix5 = new Matrix([
   [3, 4],
 ]);
 let matrix6 = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-  ];
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let matrix7 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
 let subtractionResult = subtract(matrix4, matrix5);
 console.log("Subtraction Result:");
 console.log(subtractionResult.data);
@@ -73,4 +80,11 @@ try {
   console.log(inverseResult);
 } catch (error) {
   console.error("Error computing inverse:", error.message);
+}
+
+try {
+  const result = trace(matrix7);
+  console.log("Trace:", result);
+} catch (error) {
+  console.error("Error:", error.message);
 }
