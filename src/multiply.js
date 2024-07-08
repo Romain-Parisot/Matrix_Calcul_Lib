@@ -1,5 +1,3 @@
-import Matrix from "./Matrix.js";
-
 /**
  * Multiplies two matrices.
  *
