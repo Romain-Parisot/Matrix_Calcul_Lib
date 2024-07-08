@@ -1,4 +1,4 @@
-import Matrix from "./matrix.js";
+import Matrix from "./src/matrix.js";
 import { add } from "./src/add.js";
 import { transpose } from "./src/transpose.js";
 
