@@ -5,6 +5,7 @@ import { subtract } from "./src/subtract.js";
 import { multiply } from "./src/multiply.js";
 import { inverse } from "./src/inverse.js";
 import { hadamard } from "./src/hadamard.js";
+import { diagonal } from "./src/diagonal.js";
 
 let matrix1 = new Matrix([
   [1, 2],
@@ -59,3 +60,12 @@ try {
 } catch (error) {
   console.error("Error computing inverse:", error.message);
 }
+
+let matrix6 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+let diagonalElements = diagonal(matrix6);
+console.log("Diagonal Elements:");
+console.log(diagonalElements);
