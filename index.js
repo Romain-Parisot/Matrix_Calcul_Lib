@@ -21,7 +21,6 @@ let matrix3 = new Matrix([
   [4, 5, 6],
   [7, 8, 9],
 ]);
-
 let matrix4 = new Matrix([
   [10, 11],
   [12, 13],
@@ -30,7 +29,11 @@ let matrix5 = new Matrix([
   [1, 2],
   [3, 4],
 ]);
-
+let matrix6 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ];
 let subtractionResult = subtract(matrix4, matrix5);
 console.log("Subtraction Result:");
 console.log(subtractionResult.data);
@@ -45,7 +48,7 @@ console.log(multiplicationResult.data);
 
 let transposedResult = transpose(matrix3.data);
 console.log("Transpose Result:");
-console.log(transposed_result);
+console.log(transposedResult);
 
 let scalar = 2;
 let scalarMultiplicationResult = scalarMultiply(matrix1.data, scalar);
@@ -57,6 +60,10 @@ let hadamardResult = hadamard(matrix1.data, matrix2.data);
 console.log("Hadamard Result:");
 console.log(hadamardResult);
 
+let diagonalElements = diagonal(matrix6);
+console.log("Diagonal Elements:");
+console.log(diagonalElements);
+
 try {
   let inverseResult = inverse([
     [1, 2],
@@ -67,12 +74,3 @@ try {
 } catch (error) {
   console.error("Error computing inverse:", error.message);
 }
-
-let matrix6 = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-let diagonalElements = diagonal(matrix6);
-console.log("Diagonal Elements:");
-console.log(diagonalElements);
