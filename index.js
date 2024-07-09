@@ -9,6 +9,7 @@ import { diagonal } from "./src/diagonal.js";
 import { scalarMultiply } from "./src/scalarMultiply.js";
 import { trace } from "./src/trace.js";
 import { mean } from "./src/mean.js";
+import { frobeniusNorm } from "./src/frobeniusNorm.js";
 
 let matrix1 = new Matrix([
   [1, 2],
@@ -108,3 +109,8 @@ try {
 let meanValue = mean(matrix8.data);
 console.log("Mean Value:");
 console.log(meanValue);
+
+// Frobenius norm of matrix
+let frobeniusNormValue = frobeniusNorm(matrix3.data);
+console.log("Frobenius Norm Value:");
+console.log(frobeniusNormValue);
